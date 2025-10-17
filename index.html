@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2048 Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>2048</h1>
+      <div class="score-container">
+        <div>Score</div>
+        <div id="score">0</div>
+      </div>
+      <div class="score-container">
+        <div>Best</div>
+        <div id="best-score">0</div>
+      </div>
+      <button id="new-game">New Game</button>
+      <button id="undo" disabled>Undo</button>
+      <button id="theme-toggle">🌙</button>
+    </header>
+    <div class="grid-wrapper">
+      <div class="grid-container">
+        <div class="grid">
+          <div class="grid-cell">1</div>
+          <div class="grid-cell">2</div>
+          <div class="grid-cell">3</div>
+          <div class="grid-cell">4</div>
+          <div class="grid-cell">5</div>
+          <div class="grid-cell">6</div>
+          <div class="grid-cell">7</div>
+          <div class="grid-cell">8</div>
+          <div class="grid-cell">9</div>
+          <div class="grid-cell">10</div>
+          <div class="grid-cell">11</div>
+          <div class="grid-cell">12</div>
+          <div class="grid-cell">13</div>
+          <div class="grid-cell">14</div>
+          <div class="grid-cell">15</div>
+          <div class="grid-cell">16</div>
+        </div>
+        <div class="tile-container"></div>
+      </div>
+    </div>
+    <div id="message" class="game-message">
+      <p></p>
+      <button id="continue">Continue</button>
+      <button id="retry">Try again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
